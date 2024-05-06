@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main_page.css">
+    <script src="main_page.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <span id="title">HOSTEL BOOKING MANAGEMENT</span>
+        </div>
+        <div class="form-class-div">
+            <form class="form">
+                <label>Log in</label><br>
+                <input type="email" name="username" id="username" placeholder="Email" required><br>
+                <input type="password" name="password" id="password" placeholder="Password" required><br>
+            </form>
+            <div class="button-div">
+                <button type="button" id="sign-in">Log in</button>
+            </div>
+            <div class="option-to-sign-up">
+                <span id="sign-up">
+                    Don't have an account?<a href="#" id="sign-up-color">Sign up</a>
+                </span>
+            </div>
+        </div>
+        <!--starting the choose account options-->
+        <div class="choose-options">
+          <img src="hostel.jpg" id="image" alt="Hostel">
+        </div>
+        <div class="signing-buttons">
+            <div id="master">
+                <button type="button" id="master-button">Sign up as manager</button>
+                <button type="button" id="student-button">Sign up as student</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
