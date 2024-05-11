@@ -16,14 +16,13 @@
             <span id="title">HOSTEL BOOKING MANAGEMENT</span>
         </div>
         <div class="form-class-div">
-            <form class="form">
+            <form class="form" action="" method="get">
                 <label>Log in</label><br>
-                <input type="email" name="username" id="username" placeholder="Email" required><br>
-                <input type="password" name="password" id="password" placeholder="Password" required><br>
+                <input type="email" name="username" name="sign-in-email" id="username" placeholder="Email" required autocomplete="off"><br>
+                <input type="password" name="password" name="sign-in-password" id="password" placeholder="Password" required>
+                <input type="submit" id="sign-in" name="save">
             </form>
-            <div class="button-div">
-                <button type="button" id="sign-in">Log in</button>
-            </div>
+
             <div class="option-to-sign-up">
                 <span id="sign-up">
                     Don't have an account?<a href="#" id="sign-up-color">Sign up</a>
@@ -40,6 +39,30 @@
                 <button type="button" id="student-button">Sign up as student</button>
             </div>
         </div>
+    </div>
+    <!--Manager sign up process-->
+    <div class="manager-sign-up-page">
+       <div class="image_2_center">
+            <img id="second-image" alt="Image" src="https://yesofcorsa.com/wp-content/uploads/2017/12/Hostel-Wallpaper-Download-Free.jpg">
+       </div>
+       <div class="manage">
+        <span id="explore">Explore Our Affordable Hostel Near Your Comfort</span>
+       </div>
+       <div class="form-sign-up-div">
+        <div class="sign-up-for-manager">
+            <span id="signing-up-now">Sign Up</span>
+        </div>
+            <form class="form-2" method="post">
+                <input type="text" placeholder="Hostel Name" id="input_2" name="hostel-name" class="inputted_4" required autocapitalize="characters" autofocus>
+                <input type="text" placeholder="Location" id="input_2" name="location" class="inputted_4" required autocapitalize="character">
+                <input type="email" placeholder="Email" id="input_2" name="manager-email" required autocomplete="off"><br>
+                <input type="password" placeholder="Password" id="input_2" name="manager-password" required>
+                <input type="password" placeholder="Confirm Password" id="input_2" name="manager-confirm-password" required>
+                <input type="number" placeholder="Number Of Rooms Available" id="input_2" name="rooms-available" required><br>
+                <input type="number" placeholder="Amount Of Room Per Person" id="input_2" maxlength="10" name="person-per-room" required>
+                <input type="text" placeholder="Building Type (i.e Storey or)" class="inputted_4" name="buliding-type" id="input_2" required autocapitalize="characters">
+            </form>
+       </div>
     </div>
 </body>
 </html>

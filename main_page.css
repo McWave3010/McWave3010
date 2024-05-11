@@ -29,6 +29,7 @@ body {
     font-style: normal;
     margin-top: 20px;
 }
+
 .form-class-div {
     background-color: #CFCFCF;
     transform: translateX(50%);
@@ -77,7 +78,8 @@ body {
     font-size: 20px;
     background-color: #96CAF3;
     color: white;
-    
+    margin-left: 100px;
+    margin-top: 10px;
     transition: background-color 2s,color 2s;
 }
 #sign-in:hover {
@@ -87,7 +89,7 @@ body {
 }
 .option-to-sign-up {
     margin-left: 5px;
-    margin-top: 20px;
+    margin-top: 60px;
     vertical-align: bottom;
 }
 #sign-up {
@@ -109,11 +111,7 @@ body {
     #sign-up-color {
         font-size: 20px;
     }
-    #sign-in {
-        margin-left: 40px;
-        margin-top: 90px;
-        margin-bottom: 0px;
-    }
+
    .main{
     display: flex;
     flex-direction: column;
@@ -192,4 +190,102 @@ body {
     color: white;
     box-shadow: 5px 5px 5px grey;
     filter: drop-shadow(10px);
+}
+/* starting the sign-up as manager page */
+.manager-sign-up-page {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.image_2_center {
+    width: 100%;
+    display: flex;
+    height: 500px;
+    margin-bottom: 40px;
+}
+#second-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 5px 5px 5px grey;
+    filter: drop-shadow(10px);
+}
+.manage {
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 25%;
+}
+#explore {
+    font-family: "Roboto Condensed";
+    font-size: 40px;
+    font-weight: 500;
+    color: #464646;
+    animation-name: changing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes changing {
+    0% {
+        font-size: 40px;
+        font-weight: 500;
+        color: #464646;
+        opacity: 1;
+    }
+    50% {
+        font-size: 20px;
+        font-weight: 250;
+        opacity: 0;
+    }
+    100% {
+        font-size: 40px;
+        font-weight: 500;
+        opacity: 1;
+    }
+}
+.form-sign-up-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up-for-manager {
+    margin-bottom: 20px;
+}
+#signing-up-now {
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    animation-name: blurry;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes blurry {
+    0% {
+        font-size: 24px;
+        opacity: 1;
+    }
+    50% {
+        font-size: 20px;
+        opacity: 0;
+    }
+    100% {
+        font-size: 24px;
+        opacity: 1;
+    }
+}
+#input_2 {
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    font-family: "Roboto Condensed";
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
 }
