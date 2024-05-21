@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector("#lists-of-links").style.display = 'none';
         document.querySelector(".gridding-pictures").style.display = 'none';
         document.querySelector(".main-gridding-container").style.display = 'none';
-    
+        document.querySelector(".about-section").style.display = 'none';
+        document.querySelector(".collaborators-section").style.display = 'none';
 }
 document.querySelector("#linker").onclick = function() {
     document.querySelector("#svg-menu").style.display = 'none';
@@ -46,7 +47,8 @@ document.querySelector("#signer-signing-in").onclick = function() {
     document.querySelector(".gridding-pictures").style.display = 'none';
     document.querySelector(".about-section").style.display = 'none';
     document.querySelector(".main").style.display = 'flex';
+    document.querySelector(".about-section").style.display = 'none';
+    document.querySelector(".collaborators-section").style.display = 'none';
 }
-
 }
 )
