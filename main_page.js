@@ -50,5 +50,22 @@ document.querySelector("#signer-signing-in").onclick = function() {
     document.querySelector(".about-section").style.display = 'none';
     document.querySelector(".collaborators-section").style.display = 'none';
 }
+const imagebox = document.getElementById("image-one");
+imagebox.addEventListener("mouseover", event =>{
+   if (event) {
+    console.log(event);
+    document.getElementById("good").style.transitionDuration = "2s";
+    document.getElementById("good").style.opacity = 1;
+    document.getElementById("good").style.fontSize = 25;
+    document.getElementById('good').style.fontFamily = "Roboto Condensed";
+    document.getElementById('good').style.fontWeight = 'bold';
+   }
+}
+)
+imagebox.addEventListener("mouseout", event =>{
+    if (event){
+        document.getElementById("good").style.opacity = 0;
+    }
+})
 }
 )

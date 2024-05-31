@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main_page.css">
+    <script src="https://kit.fontawesome.com/b91a75e672.js" crossorigin="anonymous"></script>
     <script src="main_page.js"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
         </div>
         <div class="form-class-div">
             <form class="form" action="" method="get">
-                <label>Log in</label><br>
+                <h3 id="labelling">Log in</h3><br>
                 <input type="email" name="username" name="sign-in-email" id="username" placeholder="Email" required autocomplete="off"><br>
                 <input type="password" name="password" name="sign-in-password" id="password" placeholder="Password" required>
                 <input type="submit" id="sign-in" name="save">
@@ -61,14 +62,18 @@
                 <input type="number" placeholder="Number Of Rooms Available" id="input_2" name="rooms-available" required><br>
                 <input type="number" placeholder="Amount Of Room Per Person" id="input_2" maxlength="10" name="person-per-room" required>
                 <input type="text" placeholder="Building Type (i.e Storey or)" class="inputted_4" name="buliding-type" id="input_2" required autocapitalize="characters">
+                <input type="text" placeholder="(toilets,bathrooms available)" name="description" id="input_2" maxlenght="100" required><br>
+                <input type="submit" value="Sign Up" id="submit">
             </form>
        </div>
     </div>
     <!--Student sign up section-->
     <section class="students-main-div" id="home">
+        <div id="video-div">
             <video src="Dorm.webm"  loop muted autoplay id="videos"></video>
-        <div class="students-design">
-            <span id="texting">Students<strong>Page</strong></span>
+        </div>
+        <div class="logo-image-div">
+            <img src="logo.jpg" alt="Image" id="logo-image">
         </div>
         <div class="links-lists">
             <ul id="lists-of-links">
@@ -91,28 +96,31 @@
     <section class="gridding-pictures">
         <div class="main-gridding-container">
                 <div class="image-1">
-                    <img src="pic.jpeg" alt="Image" id="image-one">                   
+                    <img src="pic.jpeg" alt="Image" id="image-one">
+                    <div id="image-contents-of-image-one">
+                        <span id="good">Good and affordable hostel</span>
+                    </div>                   
                 </div>
-                <div>
+                <div class="image-1">
                     <img src="pic5.jpeg" alt="Image" id="image-one">
                 </div>
-                <div>
+                <div  class="image-1">
                     <img src="pic2.jpg" alt="Image" id="image-one">
                 </div>
-                <div>
+                <div  class="image-1">
                     <img src="pic4.jpg" alt="Image" id="image-one">
                 </div>
-                <div>
+                <div  class="image-1">
                     <img src="pic3.jpg" alt="Image" id="image-one">
                 </div>
-                <div>
+                <div  class="image-1">
                     <img src="pic6.jpeg" alt="Image" id="image-one">
                 </div>
         </div>
     </section>
     <section class="about-section">
         <div id="about">
-                <span id="span-about">Blog</span>
+            <span id="span-about">Blog</span>
         </div>
     </section>
     <section class="collaborators-section">
