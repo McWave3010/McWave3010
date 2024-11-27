@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @McWave3010
 - 👀 I’m interested in Software Engineering
-- 🌱 I’m currently learning mobile app developemnt
+- 🌱 I’m currently learning mobile app development
 - 💞️ I’m looking to collaborate on any project in mind
 - 📫 How to reach me samuelamoh2080@gmail.com
 
